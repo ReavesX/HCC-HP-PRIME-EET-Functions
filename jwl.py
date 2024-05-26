@@ -31,13 +31,11 @@ def jwc():
     print(complex(ANS))
     return ANS
 
-def mainJW():
+def jwMain():
+    option = int(input("1 for 1/JWC or 2 for JWL or 3 to return to main menu"))
     if option == 1:
         jwc()
     elif option == 2:
         jwl()
     else:
         m.main()
-        
-option = int(input("1 for 1/JWC or 2 for JWL or 3 to return to main menu"))
-mainJW()

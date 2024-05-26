@@ -5,17 +5,19 @@ Language / File: BJTs.py
 Desc: Calculations for Algebraic BJT Analysis Problems
 '''
 
-def VDB:
+import cmath as c
+import main as m
+def VDB():
     
-def CE:
+def CE():
 
-def CB:
+def CB():
 
-def CC:
+def CC():
     
-def EBiased: 
+def EBiased(): 
 
-def BBiased:
+def BBiased():
 
-def CBiased:
+def CBiased():
 

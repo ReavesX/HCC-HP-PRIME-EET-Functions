@@ -5,6 +5,8 @@ Language / File: OhmsLaw.py
 Desc: Calculations for Ohms Law
 '''
 
+import cmath as c
+import main as m
 
 def Voltage():
 
