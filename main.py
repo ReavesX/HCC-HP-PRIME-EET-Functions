@@ -16,11 +16,7 @@ import BJTs as bjt
 
 # Main
 def main():
-    option = int(input('''1. for Ohms Law\n
-                          2. for Resistance\n
-                          3. for JWL/JWC\n
-                          4. for BJTs\n
-                          5. for 555timer\n '''))
+    option = int(input("  1. for Ohms Law\n  2. for Resistance\n  3. for JWL/JWC\n  4. for BJTs\n  5. for 555timer\n  "))
              
     if option == 1:
         OL.main()
@@ -34,4 +30,5 @@ def main():
         tmr.tmrMain()
 
 
-main()
+if __name__ == "__main__":
+    main()
