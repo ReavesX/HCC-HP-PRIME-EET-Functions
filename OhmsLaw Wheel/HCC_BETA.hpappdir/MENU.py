@@ -3,7 +3,9 @@ import cmath as c
 import hpprime as h
 import math as m
 import ohmsLaw as OL
-
+import RESISTANCE as r
+import VOLTAGE as v
+import POWER as p
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     H P   P r i m e   I / O   R o u t i n e s -- Authored by Mike Markowski, mike.ab3ap@gmail.com
