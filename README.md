@@ -18,17 +18,6 @@ This project contains a set of tools for circuit analysis, including calculation
 
 ## Installation Instructions
 
-### Running on a Computer
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/ReavesX/HCC-HP-PRIME-EET-Functions/.git
-   cd circuit-analysis-tool
-2. Ensure you have Python installed:
-   Download and install Python from python.org.
-3. Run the Script:
-   in shell/terminal: 
-   python main.py 
-
 ### Setting Up as a New App on HP PRIME G2 Calculator
 1. **Download HP Prime Connectivity Kit:**
    Download and install the HP Prime Connectivity Kit from the [HP official website](https://www.hp.com/us-en/shop/pdp/hp-prime-graphing-calculator).
@@ -38,49 +27,7 @@ This project contains a set of tools for circuit analysis, including calculation
 
 3. **Transfer the Scripts:**
    - Open the HP Prime Connectivity Kit.
-   - Drag and drop the Python scripts (`main.py`, `jwl.py`, `tmr_555.py`, `OhmsLaw.py`, `Resistance.py`, `BJTs.py`) into the `Programs` section of the Connectivity Kit.
-
-4. **Create a New App:**
-   - On your HP PRIME G2 Calculator, press the `Apps` key.
-   - Select `+ New` to create a new app.
-   - Name the new app (e.g., `CircuitAnalysis`).
-
-5. **Set Up the Python App:**
-   - Press the `Shift` key and then the `1` key to open the `Program` editor.
-   - In the new program editor, input the following Python code to integrate the scripts:
-
-     ```python
-     # Circuit Analysis Tool
-
-     import jwl as jwl
-     import tmr_555 as tmr
-     import OhmsLaw as OL
-     import Resistance as RZ
-     import BJTs as bjt
-
-     def main():
-         option = int(input('''1 for Ohms Law, 2 for Resistance,
-     3 for JWL/JWC, 4 for Bjts,
-     5 for 555timer: '''))
-             
-         if option == 1:
-             OL.calculate_ohms_law()  # Replace with the actual function name
-         elif option == 2:
-             RZ.calculate_resistance()  # Replace with the actual function name
-         elif option == 3: 
-             jwl.calculate_jwl()  # Replace with the actual function name
-         elif option == 4:
-             bjt.calculate_bjt()  # Replace with the actual function name
-         elif option == 5: 
-             tmr.calculate_timer()  # Replace with the actual function name
-         else:
-             print("Invalid option")
-
-     if __name__ == "__main__":
-         main()
-     ```
-
-   - Ensure each of the imported modules (`jwl.py`, `tmr_555.py`, `OhmsLaw.py`, `Resistance.py`, `BJTs.py`) are included in your calculator's memory.
+   - Drag and drop the folder (`main.py`, `jwl.py`, `tmr_555.py`, `OhmsLaw.py`, `Resistance.py`, `BJTs.py`) into the `Programs` section of the Connectivity Kit.
 
 6. **Save and Run the App:**
    - Save the new program.
