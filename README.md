@@ -4,14 +4,14 @@
 Donald Jackson
 
 ## Date
-05/23/2024
+10/28/2024
 
 ## Description
 This project contains a set of tools for circuit analysis, including calculations for resistance, impedance, Ohm's Law, and more. The scripts are designed to run on Python, but they can also be adapted for use on an HP PRIME G2 Calculator.
 
 ## Features
 - **Ohm's Law Calculations**
-- **Resistance Calculations**
+- **Impedance Calculations**
 - **JWL/JWC Calculations**
 - **BJT Calculations**
 - **555 Timer Calculations**
