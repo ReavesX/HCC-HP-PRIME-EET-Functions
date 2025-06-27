@@ -69,6 +69,21 @@ def welcomeScreen():
   h.eval('wait(3)')
   screenClear()
 
+def display_and_store_result(label, value, x=123, y=120, sigfigs=3):
+    """
+    Stores a computed electrical value to AVars and displays it on screen.
+
+    Args:
+        label (str): Name to save the variable as in AVars (e.g., "Voltage")
+        value (float): The computed result
+        x (int): X-coordinate for on-screen output
+        y (int): Y-coordinate for on-screen output
+        sigfigs (int): Significant figures for engineering notation
+    """
+    toAVars(label, value)
+    formatted = eng(value, sigfigs)
+    h.eval('textout_p("%s = %s%s", %d, %d)' % (label[0], formatted, label[0], x, y))
+
 def create_button_menu(choice1, choice2, choice3, choice4, choice5):
   """
   Creates a standardized input dialog for electrical calculations.
