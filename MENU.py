@@ -56,9 +56,15 @@ def softPick(pt):         # pt is [x, y, xOrig, yOrig, type]
 def toAVars(varName, val):
     cmd = 'AVars("%s"):=CAS.eval("%.11e")' % (varName, val) # 12 sig figs.
     h.eval(cmd)
+    
+
+
+
+  '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+    HCC  P r i m e    -- Authored by Donald Jackson, donjacks0n@proton.me
   
-  
-  
+  '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 # App begin
 def welcomeScreen():
   h.eval('print') # Clear terminal.
