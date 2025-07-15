@@ -71,7 +71,6 @@ def welcomeScreen():
 
 def display_and_store_result(label, value, x=123, y=120, sigfigs=3):
     """
-    Stores a computed electrical value to AVars and displays it on screen.
 
     Args:
         label (str): Name to save the variable as in AVars (e.g., "Voltage")
@@ -79,10 +78,15 @@ def display_and_store_result(label, value, x=123, y=120, sigfigs=3):
         x (int): X-coordinate for on-screen output
         y (int): Y-coordinate for on-screen output
         sigfigs (int): Significant figures for engineering notation
+
     """
     toAVars(label, value)
     formatted = eng(value, sigfigs)
-    h.eval('textout_p("%s = %s%s", %d, %d)' % (label[0], formatted, label[0], x, y))
+
+    # Fixed output function, arraying in the previous one did not work as intended unforutnately.
+    h.eval('textout_p("%s: %s", %d, %d)' % (label, formatted, x, y))
+
+    h.eval('wait(3)') # Wait for 3 seconds to see the output
 
 def create_button_menu(choice1, choice2, choice3, choice4, choice5):
   """
