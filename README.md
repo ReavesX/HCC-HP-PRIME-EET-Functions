@@ -1,6 +1,6 @@
 # HP‑Prime EE‑CpE Applet
 
-*Version 2.0.0*
+*Version 2.1.2*
 
 This HP Prime calculator applet is designed specifically for students in the Computer Engineering and Electronics Engineering Technology (CpE/EE) program at Hillsborough Community College. It provides quick access to commonly used engineering formulas, conversions, and calculation tools — all from the calculator itself.
 
