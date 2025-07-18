@@ -1,33 +1,44 @@
 import MENU as m
-import voltage as v
 import hpprime as h
-# import current, resistance, power — when those are ready
+import CALS as CALS
+
+#import modules
 
 def main():
     m.welcomeScreen()
 
-    while True:
+    while True: 
         # Show button-based menu
-        choice = m.create_button_menu("Voltage", "Current", "Resistance", "Power", "Exit")
+        choice = m.create_button_menu("CALS", " x ", " x ", " x ", " x ")
 
         if choice == 0:
-            v.voltage_m()
+            CALS.cals_main()
         elif choice == 1:
             m.screenClear()
-            h.eval('print("Current menu not implemented yet.")')
+            h.eval('print("Not implemented yet.")')
             h.eval('wait(2)')
             m.screenClear()
         elif choice == 2:
             m.screenClear()
-            h.eval('print("Resistance menu not implemented yet.")')
+            h.eval('print("Not implemented yet.")')
             h.eval('wait(2)')
             m.screenClear()
         elif choice == 3:
             m.screenClear()
-            h.eval('print("Power menu not implemented yet.")')
+            h.eval('print("Not implemented yet.")')
             h.eval('wait(2)')
             m.screenClear()
-        elif choice == 4:  # Exit
+        elif choice == 4:
+            m.screenClear()
+            h.eval('print("Not implemented yet.")')
+            h.eval('wait(2)')
+            m.screenClear()
+        elif choice == 5:
+            m.screenClear()
+            h.eval('print("Not implemented yet.")')
+            h.eval('wait(2)')
+            m.screenClear()
+        elif choice == 6:  # Exit
             m.screenClear()
             h.eval('print("Goodbye!")')
             break
@@ -37,6 +48,5 @@ def main():
             h.eval('print("Invalid selection.")')
             h.eval('wait(2)')
             m.screenClear()
-
 # Launch the app
 main()
