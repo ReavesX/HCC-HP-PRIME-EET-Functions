@@ -1,8 +1,8 @@
 import MENU as m
-import voltage as v
 import hpprime as h
 import CALS as CALS
-# import current, resistance, power — when those are ready
+
+#import modules
 
 def main():
     m.welcomeScreen()
