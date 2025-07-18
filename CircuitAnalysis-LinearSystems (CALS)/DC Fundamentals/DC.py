@@ -13,10 +13,7 @@ def DC_Main():
         if choice == 0:
             ohmslaw.ohmslaw_main()
         elif choice == 1:
-            m.screenClear()
-            h.eval('print("Not implemented yet.")')
-            h.eval('wait(2)')
-            m.screenClear()
+            combo.combos_main()
         elif choice == 2:
             m.screenClear()
             h.eval('print("Not implemented yet.")')

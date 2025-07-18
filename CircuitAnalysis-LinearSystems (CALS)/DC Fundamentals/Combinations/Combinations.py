@@ -1,8 +1,8 @@
 import MENU as m
 import hpprime as h
-import CComb as CC
-import RComb as RS
-import LComb as LS
+from  CComb import CComb_menu
+from  RComb import RComb_menu
+from  LComb import LComb_menu
 
 
 def combos_main(): 
@@ -11,20 +11,11 @@ def combos_main():
             choice = m.create_button_menu("Resistance", "Inductors", "Capacitors", "", "")
 
             if choice == 0:
-                m.screenClear()
-                h.eval('print("Not implemented yet.")')
-                h.eval('wait(2)')
-                m.screenClear()
+                RComb_menu()
             elif choice == 1:
-                m.screenClear()
-                h.eval('print("Not implemented yet.")')
-                h.eval('wait(2)')
-                m.screenClear()
+                LComb_menu()
             elif choice == 2:
-                m.screenClear()
-                h.eval('print("Not implemented yet.")')
-                h.eval('wait(2)')
-                m.screenClear()
+                CComb_menu()
             elif choice == 3 or choice == 4 or choice == 5:
                 # Exit
                 m.screenClear()
