@@ -39,4 +39,3 @@ def cals_main():
             m.screenClear()
             h.eval('print("Invalid selection.")')
             h.eval('wait(2)')
-            m.screenClear()
