@@ -1,11 +1,14 @@
 import hpprime as h
 import MENU as m
 import ohmslaw as ohmslaw
+import combinations as combo
+import PowerEnergy as WJ
+import DCSimplify as DCS
 
 def DC_Main():
     while True: 
         # Show button-based menu
-        choice = m.create_button_menu("ΩLaw/Combos", "Simplify", "W or J"," "," ")
+        choice = m.create_button_menu("ΩLaw", "Combos", "Simplify","W or J"," ")
 
         if choice == 0:
             ohmslaw.ohmslaw_main()
